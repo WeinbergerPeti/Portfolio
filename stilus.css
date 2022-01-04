@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Genos:ital,wght@1,500;1,700&family=Play&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Genos:ital,wght@1,500;1,700&family=Lobster+Two:ital@1&family=Play&display=swap');
 *
 {
     box-sizing: border-box;
@@ -125,7 +124,7 @@ article
     grid-area: a;
 }
 
-img
+.kep
 {
     width: 200px;
     float: right;
@@ -145,13 +144,91 @@ img
     font-style: italic;
 }
 
-.cimh2:nth-child(even)
+.cimh2
+{
+    text-align: left;
+    margin: auto;
+    margin: 50px 0px 20px 15px;
+    font-size: 14pt;
+    font-family: 'Genos', sans-serif;
+    font-weight: bold;
+    font-weight: 700;
+    font-style: italic;
+}
+
+#hobbibekezdés
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin: auto;
+    
+}
+.torol
+{
+    clear: both;
+}
+#hobbibekezdés .kepbal
+{
+    float: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+#hobbibekezdes .kepjobb
+{
+    float: right;
+    margin: 5px;
+    padding: 5px;
+}
+
+#hobbibekezdés .parosbekezdés
+{
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    /* margin: 100px 150px 100px 150px; */
+    padding: 10px 200px 150px 200px;
+    margin-right: 100px;
+    font-size: 14pt;
+    text-align: justify;
+}
+#hobbibekezdés .paratlanbekezdés
+{
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+ /*    margin: 10px 150px 0px 150px; */
+    padding: 10px 200px 100px 200px;
+    margin-right: 100px;
+    font-size: 14pt;
+    text-align: justify;
+}
+
+#hobbibekezdés img
+{
+    float: left;
+}
+#lista
+{
+    margin-left: 260px;
+    font-family: 'Play', sans-serif;
+    margin-top: 5px;
+    
+}
+#lista li
+{
+    list-style-type: square;
+}
+
+/* .cimh2:nth-child(even)
 {
     margin: 100px 250px 0px 250px;
     font-size: 16pt;
-}
+} */
 
-article p:nth-child(odd)
+#indexbekezdes p:nth-child(odd)
 {
     /* background-color: rgb(226, 226, 226); */
     width: 100%;
@@ -163,7 +240,7 @@ article p:nth-child(odd)
     text-align: justify;
 }
 
-article p:nth-child(even)
+#indexbekezdes p:nth-child(even)
 {
     background-color: rgb(230, 230, 230);
     width: 100%;
@@ -280,22 +357,20 @@ aside
 
 footer
 {
-    margin-top: 15px;
     grid-area: f;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #333;
     color: #f2f2f2;
 }
 
 #tartalom
 {
-    background-color: silver;
     width: 100%;
     margin: auto;
     padding: 60px 0px 30px 0px;
     margin-bottom: 30px;
-    background-color: silver;
+    background-color: lightgray;
     margin-bottom: -15px;
 }
 
@@ -341,7 +416,8 @@ input[type=submit]:hover
     background-color: #45a049;
 }
   
-.col-75 {
+.szelesseg
+{
     /* float: left;
     width: 75%;
     margin-top: 6px; */
@@ -370,6 +446,13 @@ input[type=submit]:hover
     content: "";
     display: table;
     clear: both;
+}
+
+.idezet
+{
+    padding: 5px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 14pt;
 }
 
 @media screen and (max-width:1000px)
