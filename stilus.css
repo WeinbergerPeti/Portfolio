@@ -41,21 +41,25 @@ p
 #kezdőlap
 {
     background-image: url("kepek/kezdőlap5próba.jpg");
+    background-position: center;
 }
 
 #kapcsolat
 {
     background-image: url("kepek/kapcsolat.jpg");
+    background-position: center;
 }
 
 #hobbi
 {
     background-image: url("kepek/hobbi.jpg");
+    background-position: center;
 }
 
 #munka
 {
     background-image: url("kepek/munka2.jpg");
+    background-position: center;
 }
 
 header p
@@ -125,6 +129,15 @@ article
 }
 
 .kep
+{
+    width: 200px;
+    float: right;
+    margin-top: 100px;
+    padding: 5px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+}
+.enkep
 {
     width: 200px;
     float: right;
@@ -459,15 +472,147 @@ input[type=submit]:hover
 {
     main
     {
-        grid-template-areas: "a as"
-                             "f f";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-
+    header img
+    {
+        margin: auto;
+    }
+    picture
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-position: center;
+        margin: auto;
+    }
+    .letoltes
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     nav ul
     {
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    main
+    {
+        grid-template-columns: 1fr;
+    }
+    header img
+    {
+        margin: auto;
+    }
+    picture
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        text-align: center;
+        margin-left: 35%;
+    }
+    .letoltes tr, th, td
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        margin: auto;
+    }
+    nav ul
+    {
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    main
+    {
+        grid-template-areas: "a"
+                             "as"
+                             "f";
+    }
+    nav
+    {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+    #kcím
+    {
+        margin: 0px;
+        margin-top: 20px;
+        display: grid;
         grid-template-columns: 1fr;
         text-align: center;
-        max-width: 200px;
+    }
+    #indexbekezdes
+    {
+        color: lightsalmon;
+        margin: 0px;
+        padding: -50px;
+        text-align: left;
+        margin: auto;
+/*         display: grid;
+        grid-template-columns: 1fr; */
+    }
+    .enkep
+    {
+        /* grid-template-columns: 1fr; */
+        float: left;
+        padding: 0px;
+    }
+    /*
+    #indexbekezdes img
+    {
+        margin: 0px;
+        margin: auto;
+        text-align: center;
+    } */
+    .címnév
+    {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    nav
+    {
+        grid-template-columns: 1fr;
+    }
+    header img
+    {
+        margin: auto;
+    }
+    picture
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        text-align: center;
+        margin-left: 25%;
+    }
+    .letoltes tr, th, td
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: left;
+        margin: auto;
+    }
+    .letoltgomb
+    {
+        text-align: center;
+    }
+    .címek
+    {
+        text-align: left;
+    }
+    nav ul
+    {
+        text-align: center;
         margin: auto;
     }
 }
