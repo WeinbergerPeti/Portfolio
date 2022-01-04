@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stilus.css">
     <title>Kapcsolat | Weinberger Péter</title>
+    <link rel="icon" type="ikon" href="kepek/icon.jpg">
 </head>
 <body>
     <header id="kapcsolat">
@@ -15,12 +16,46 @@
         <ul>
             <li><a href="index.html">Kezdőlap</a></li><!-- Bemutatkozás -->
             <li><a href="munkaim.html">Munkáim</a></li><!-- munkáim -->
-            <li><a href="hobbi.html">Hobbi</a></li><!-- hobbi -->
+            <li><a href="hobbi.html">Hobbim</a></li><!-- hobbi -->
             <li><a href="kapcsolat.html">Kapcsolat</a></li><!-- kapcsolat -->
         </ul>
     </nav>
     <main>
-        <!-- <form action="/action_page.php" method="get"></form> -->
+       <article>
+           <!-- <form>
+                <label for="név">Név</label><br>
+                <input type="text" id="név" name="név"><br>
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="email">
+                <label for="szöveg"></label><br>
+                <textarea name="üzenet" id="üzenet" cols="30" rows="10"></textarea>
+           </form> -->
+        <div id="tartalom">
+            <form>
+                <div class="sor">
+                    <div class="col-75">
+                        <input type="text" id="nev" name="nev" placeholder="Név">
+                    </div>
+                </div>
+                <div class="sor">
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="E-mail">
+                    </div>
+                </div>
+                <div class="sor">
+                </div>
+                <div class="sor">
+                    <div class="col-75">
+                        <textarea id="szoveg" name="szoveg" placeholder="Írj bármit..." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="sor">
+                    <input type="submit" value="Küldés">
+                </div>
+            </form>
+        </div>
+    </article>
             
         <footer>
             <p>&copy; Minden jog fentartva!<br>Készítette: Weinberger Péter</p>
