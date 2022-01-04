@@ -53,7 +53,8 @@ main
     display: grid;
     grid-template-areas: /* "h h h h h h h"
                          "n n n n n n n" */
-                         "a a a a a as as"
+                         "a a a a a a a"
+                         "as as as as as as as"
                          "f f f f f f f";
 
 /*     z-index: 10; */
@@ -198,9 +199,95 @@ article p:nth-child(even)
     text-align: justify;
 }
 
+picture
+{
+    margin: auto;
+}
+
+
+.letoltes
+{
+    margin: auto;
+    font-size: 12pt;
+}
+
+/* .letoltes th
+{
+    border: 1px solid black;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: auto;
+    /* text-align: center; */
+    /* margin-left: 10px;
+    margin-right: 10px;
+} */
+
+#fn, #ld, #l, #t
+{
+    background-color: gray;
+    margin: auto;
+    padding: 10px;
+    font-size: 16pt;
+}
+
+#fn
+{
+    width: 400px;
+}
+#ld
+{
+    width: 250px;
+}
+#l
+{
+    width: 150px;
+}
+#t
+{
+    width: 300px;
+}
+.letoltes td
+{
+    padding-left: 10px;
+}
+.címek
+{
+    font-size: 20pt;
+    padding-right: 40px;
+}
+
+.letoltgomb
+{
+    width: 50px;
+    margin: 0px;
+    padding: 5px;
+/*     margin: auto; */
+    text-align: center;
+    margin: auto;
+    margin-right: 35%;
+}
+
+tr:nth-child(even)
+{
+    background-color: silver;
+}
+tr:nth-child(odd)
+{
+    background-color: gray;
+}
+table, tr, td, th
+{
+    margin: 0px;
+    padding: 0px;
+    border-radius: 3px;
+}
+
 aside
 {
+    margin-top: 50px;
+    padding-top: 80px;
     grid-area: as;
+    border-radius: 5px;
 }
 
 footer
