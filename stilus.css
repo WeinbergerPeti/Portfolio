@@ -141,9 +141,9 @@ article
 {
     width: 200px;
     float: right;
-    margin-top: 100px;
     padding: 5px;
-    margin-right: 100px;
+    margin: auto;
+    margin-right: 150px;
     margin-bottom: 25px;
 }
 
@@ -251,6 +251,8 @@ article
     /*    margin: 10px 150px 0px 150px; */
     margin: 10px 0px 0px 0px;
     padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     margin: auto;
     font-size: 14pt;
     text-align: justify;
@@ -264,8 +266,8 @@ article
     /* margin: 100px 150px 100px 150px; */
     margin: 10px 0px 0px 0px;
     padding: 10px;
-    padding-bottom: 150px;
-    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     margin: auto;
     font-size: 14pt;
     text-align: justify;
